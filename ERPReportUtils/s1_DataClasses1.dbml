@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="erpp" Class="s1_DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.50.13;Initial Catalog=erpp;Persist Security Info=True;User ID=sa" SettingsObjectName="ERPReportUtils.Properties.Settings" SettingsPropertyName="erppConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[_Document898]" Member="_Document898">
+    <Type Name="_Document898">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_NumberPrefix]" Member="_NumberPrefix" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33135]" Member="_Fld33135" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33136RRef]" Member="_Fld33136RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33137RRef]" Member="_Fld33137RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33138RRef]" Member="_Fld33138RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33139RRef]" Member="_Fld33139RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33140]" Member="_Fld33140" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33141RRef]" Member="_Fld33141RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33142]" Member="_Fld33142" Type="System.Decimal" DbType="Decimal(8,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33143RRef]" Member="_Fld33143RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33144]" Member="_Fld33144" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33145]" Member="_Fld33145" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33146RRef]" Member="_Fld33146RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33147RRef]" Member="_Fld33147RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33148]" Member="_Fld33148" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33149RRef]" Member="_Fld33149RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33150]" Member="_Fld33150" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33151RRef]" Member="_Fld33151RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33152]" Member="_Fld33152" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33153RRef]" Member="_Fld33153RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33154RRef]" Member="_Fld33154RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33155]" Member="_Fld33155" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document898_VT33181]" Member="_Document898_VT33181">
+    <Type Name="_Document898_VT33181">
+      <Column Name="[_Document898_IDRRef]" Member="_Document898_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo33182]" Member="_LineNo33182" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33183RRef]" Member="_Fld33183RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33184]" Member="_Fld33184" Type="System.String" DbType="NVarChar(24) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33185]" Member="_Fld33185" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33186]" Member="_Fld33186" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33187]" Member="_Fld33187" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33188]" Member="_Fld33188" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document898_VT33189]" Member="_Document898_VT33189">
+    <Type Name="_Document898_VT33189">
+      <Column Name="[_Document898_IDRRef]" Member="_Document898_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo33190]" Member="_LineNo33190" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33191]" Member="_Fld33191" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33192RRef]" Member="_Fld33192RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33193]" Member="_Fld33193" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33194]" Member="_Fld33194" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document899]" Member="_Document899">
+    <Type Name="_Document899">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_NumberPrefix]" Member="_NumberPrefix" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33216]" Member="_Fld33216" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33217RRef]" Member="_Fld33217RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33218RRef]" Member="_Fld33218RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33219RRef]" Member="_Fld33219RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33220RRef]" Member="_Fld33220RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33221]" Member="_Fld33221" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33222RRef]" Member="_Fld33222RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33223]" Member="_Fld33223" Type="System.Decimal" DbType="Decimal(8,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33224RRef]" Member="_Fld33224RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33225RRef]" Member="_Fld33225RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33226]" Member="_Fld33226" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33227]" Member="_Fld33227" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33228RRef]" Member="_Fld33228RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33229RRef]" Member="_Fld33229RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33230RRef]" Member="_Fld33230RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33231RRef]" Member="_Fld33231RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33232RRef]" Member="_Fld33232RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33233RRef]" Member="_Fld33233RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33234]" Member="_Fld33234" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33235RRef]" Member="_Fld33235RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document899_VT33253]" Member="_Document899_VT33253">
+    <Type Name="_Document899_VT33253">
+      <Column Name="[_Document899_IDRRef]" Member="_Document899_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo33254]" Member="_LineNo33254" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33255RRef]" Member="_Fld33255RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33256]" Member="_Fld33256" Type="System.String" DbType="NVarChar(22) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33257]" Member="_Fld33257" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33258]" Member="_Fld33258" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33259]" Member="_Fld33259" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33260]" Member="_Fld33260" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33261]" Member="_Fld33261" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference177]" Member="_Reference177">
+    <Type Name="_Reference177">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_OwnerIDRRef]" Member="_OwnerIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5151]" Member="_Fld5151" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5152]" Member="_Fld5152" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5153RRef]" Member="_Fld5153RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5154RRef]" Member="_Fld5154RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5155RRef]" Member="_Fld5155RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5156RRef]" Member="_Fld5156RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference180]" Member="_Reference180">
+    <Type Name="_Reference180">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_OwnerIDRRef]" Member="_OwnerIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5190RRef]" Member="_Fld5190RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5191RRef]" Member="_Fld5191RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5192RRef]" Member="_Fld5192RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5193]" Member="_Fld5193" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5194]" Member="_Fld5194" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5195RRef]" Member="_Fld5195RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference313]" Member="_Reference313">
+    <Type Name="_Reference313">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8438]" Member="_Fld8438" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8439RRef]" Member="_Fld8439RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8440RRef]" Member="_Fld8440RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8441]" Member="_Fld8441" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8442]" Member="_Fld8442" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8443]" Member="_Fld8443" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8444]" Member="_Fld8444" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8445]" Member="_Fld8445" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld8446]" Member="_Fld8446" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference435]" Member="_Reference435">
+    <Type Name="_Reference435">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_ParentIDRRef]" Member="_ParentIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11063RRef]" Member="_Fld11063RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11064RRef]" Member="_Fld11064RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11065_TYPE]" Member="_Fld11065_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11065_RTRef]" Member="_Fld11065_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11065_RRRef]" Member="_Fld11065_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11066]" Member="_Fld11066" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11067]" Member="_Fld11067" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11068RRef]" Member="_Fld11068RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11069RRef]" Member="_Fld11069RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11070]" Member="_Fld11070" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11071]" Member="_Fld11071" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11072RRef]" Member="_Fld11072RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11073]" Member="_Fld11073" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11074]" Member="_Fld11074" Type="System.Decimal" DbType="Decimal(3,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11075]" Member="_Fld11075" Type="System.Decimal" DbType="Decimal(3,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11076]" Member="_Fld11076" Type="System.Decimal" DbType="Decimal(3,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11077RRef]" Member="_Fld11077RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11078]" Member="_Fld11078" Type="System.Decimal" DbType="Decimal(3,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11079]" Member="_Fld11079" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11080]" Member="_Fld11080" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11081]" Member="_Fld11081" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11082RRef]" Member="_Fld11082RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11083]" Member="_Fld11083" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11084]" Member="_Fld11084" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11085]" Member="_Fld11085" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11086]" Member="_Fld11086" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld48847RRef]" Member="_Fld48847RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference492]" Member="_Reference492">
+    <Type Name="_Reference492">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_OwnerID_TYPE]" Member="_OwnerID_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_OwnerID_RTRef]" Member="_OwnerID_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_OwnerID_RRRef]" Member="_OwnerID_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_ParentIDRRef]" Member="_ParentIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11834]" Member="_Fld11834" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11835]" Member="_Fld11835" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11836RRef]" Member="_Fld11836RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11837]" Member="_Fld11837" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11838RRef]" Member="_Fld11838RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11839]" Member="_Fld11839" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11840RRef]" Member="_Fld11840RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11841RRef]" Member="_Fld11841RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11842]" Member="_Fld11842" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11843]" Member="_Fld11843" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11844]" Member="_Fld11844" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11845]" Member="_Fld11845" Type="System.Decimal" DbType="Decimal(18,6) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11846RRef]" Member="_Fld11846RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11847RRef]" Member="_Fld11847RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11848RRef]" Member="_Fld11848RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11849]" Member="_Fld11849" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11850RRef]" Member="_Fld11850RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11851]" Member="_Fld11851" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11853]" Member="_Fld11853" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11854RRef]" Member="_Fld11854RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11855RRef]" Member="_Fld11855RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11856]" Member="_Fld11856" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11857RRef]" Member="_Fld11857RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11858]" Member="_Fld11858" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11859]" Member="_Fld11859" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld11860RRef]" Member="_Fld11860RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference102]" Member="_Reference102">
+    <Type Name="_Reference102">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3411RRef]" Member="_Fld3411RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3412]" Member="_Fld3412" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3413]" Member="_Fld3413" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3414]" Member="_Fld3414" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3415]" Member="_Fld3415" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3416RRef]" Member="_Fld3416RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3417]" Member="_Fld3417" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3418]" Member="_Fld3418" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3419]" Member="_Fld3419" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3420]" Member="_Fld3420" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3421]" Member="_Fld3421" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3422]" Member="_Fld3422" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3423]" Member="_Fld3423" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3424]" Member="_Fld3424" Type="System.Data.Linq.Binary" DbType="Image NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3425RRef]" Member="_Fld3425RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3426]" Member="_Fld3426" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3427]" Member="_Fld3427" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3428]" Member="_Fld3428" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3429]" Member="_Fld3429" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3430]" Member="_Fld3430" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld3431RRef]" Member="_Fld3431RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference51]" Member="_Reference51">
+    <Type Name="_Reference51">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2539]" Member="_Fld2539" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2540]" Member="_Fld2540" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2541]" Member="_Fld2541" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2542RRef]" Member="_Fld2542RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2543]" Member="_Fld2543" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2544]" Member="_Fld2544" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld2545RRef]" Member="_Fld2545RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_InfoRg41332]" Member="_InfoRg41332">
+    <Type Name="_InfoRg41332">
+      <Column Name="[_Period]" Member="_Period" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_RecorderTRef]" Member="_RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_RecorderRRef]" Member="_RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo]" Member="_LineNo" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Active]" Member="_Active" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41333RRef]" Member="_Fld41333RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41334RRef]" Member="_Fld41334RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41335RRef]" Member="_Fld41335RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41336]" Member="_Fld41336" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld41337RRef]" Member="_Fld41337RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41338RRef]" Member="_Fld41338RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference371]" Member="_Reference371">
+    <Type Name="_Reference371">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_ParentIDRRef]" Member="_ParentIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Folder]" Member="_Folder" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld9641RRef]" Member="_Fld9641RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld9642]" Member="_Fld9642" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[_Fld9643]" Member="_Fld9643" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[_Fld9644]" Member="_Fld9644" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld9645RRef]" Member="_Fld9645RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld9646]" Member="_Fld9646" Type="System.String" DbType="NText" CanBeNull="true" />
+      <Column Name="[_Fld9647]" Member="_Fld9647" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="[_Fld9648RRef]" Member="_Fld9648RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld9649RRef]" Member="_Fld9649RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld9650RRef]" Member="_Fld9650RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld9651RRef]" Member="_Fld9651RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference190]" Member="_Reference190">
+    <Type Name="_Reference190">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5276RRef]" Member="_Fld5276RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5277RRef]" Member="_Fld5277RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5278RRef]" Member="_Fld5278RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5279_TYPE]" Member="_Fld5279_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5279_RTRef]" Member="_Fld5279_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld5279_RRRef]" Member="_Fld5279_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Enum1448]" Member="_Enum1448">
+    <Type Name="_Enum1448">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_EnumOrder]" Member="_EnumOrder" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document898_VT33156]" Member="_Document898_VT33156">
+    <Type Name="_Document898_VT33156">
+      <Column Name="[_Document898_IDRRef]" Member="_Document898_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo33157]" Member="_LineNo33157" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33158]" Member="_Fld33158" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33159RRef]" Member="_Fld33159RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33160RRef]" Member="_Fld33160RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33161RRef]" Member="_Fld33161RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33162]" Member="_Fld33162" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33163]" Member="_Fld33163" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33164]" Member="_Fld33164" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33165]" Member="_Fld33165" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33166RRef]" Member="_Fld33166RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33167]" Member="_Fld33167" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33168]" Member="_Fld33168" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33169]" Member="_Fld33169" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33170]" Member="_Fld33170" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33171]" Member="_Fld33171" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33172]" Member="_Fld33172" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33173RRef]" Member="_Fld33173RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33174RRef]" Member="_Fld33174RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33175RRef]" Member="_Fld33175RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33176]" Member="_Fld33176" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33177]" Member="_Fld33177" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33178]" Member="_Fld33178" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33179RRef]" Member="_Fld33179RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33180RRef]" Member="_Fld33180RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49747]" Member="_Fld49747" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49748]" Member="_Fld49748" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49749RRef]" Member="_Fld49749RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49975]" Member="_Fld49975" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document846_VT30555]" Member="_Document846_VT30555">
+    <Type Name="_Document846_VT30555">
+      <Column Name="[_Document846_IDRRef]" Member="_Document846_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo30556]" Member="_LineNo30556" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30557RRef]" Member="_Fld30557RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30558RRef]" Member="_Fld30558RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30559]" Member="_Fld30559" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30560]" Member="_Fld30560" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30561RRef]" Member="_Fld30561RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30562]" Member="_Fld30562" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30563RRef]" Member="_Fld30563RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30564]" Member="_Fld30564" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30565RRef]" Member="_Fld30565RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30566RRef]" Member="_Fld30566RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30567RRef]" Member="_Fld30567RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49971]" Member="_Fld49971" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document846_VT30568]" Member="_Document846_VT30568">
+    <Type Name="_Document846_VT30568">
+      <Column Name="[_Document846_IDRRef]" Member="_Document846_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo30569]" Member="_LineNo30569" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30570RRef]" Member="_Fld30570RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30571RRef]" Member="_Fld30571RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30572]" Member="_Fld30572" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30573]" Member="_Fld30573" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30574RRef]" Member="_Fld30574RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30575RRef]" Member="_Fld30575RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30576RRef]" Member="_Fld30576RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30577]" Member="_Fld30577" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30578RRef]" Member="_Fld30578RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30579RRef]" Member="_Fld30579RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30580RRef]" Member="_Fld30580RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49972]" Member="_Fld49972" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document846_VT30582]" Member="_Document846_VT30582">
+    <Type Name="_Document846_VT30582">
+      <Column Name="[_Document846_IDRRef]" Member="_Document846_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo30583]" Member="_LineNo30583" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30584RRef]" Member="_Fld30584RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30585RRef]" Member="_Fld30585RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30586RRef]" Member="_Fld30586RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30587]" Member="_Fld30587" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30588RRef]" Member="_Fld30588RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30589]" Member="_Fld30589" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30590RRef]" Member="_Fld30590RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30591]" Member="_Fld30591" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30592RRef]" Member="_Fld30592RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30593RRef]" Member="_Fld30593RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld30594RRef]" Member="_Fld30594RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49973]" Member="_Fld49973" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document899_VT33236]" Member="_Document899_VT33236">
+    <Type Name="_Document899_VT33236">
+      <Column Name="[_Document899_IDRRef]" Member="_Document899_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo33237]" Member="_LineNo33237" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33238RRef]" Member="_Fld33238RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33239RRef]" Member="_Fld33239RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33240RRef]" Member="_Fld33240RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33241]" Member="_Fld33241" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33242]" Member="_Fld33242" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33243]" Member="_Fld33243" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33244]" Member="_Fld33244" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33245RRef]" Member="_Fld33245RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33246]" Member="_Fld33246" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33247]" Member="_Fld33247" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld33248RRef]" Member="_Fld33248RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33249RRef]" Member="_Fld33249RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33250RRef]" Member="_Fld33250RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33251RRef]" Member="_Fld33251RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld33252RRef]" Member="_Fld33252RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49757]" Member="_Fld49757" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49758]" Member="_Fld49758" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49759RRef]" Member="_Fld49759RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49976]" Member="_Fld49976" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_AccumRg44378]" Member="_AccumRg44378">
+    <Type Name="_AccumRg44378">
+      <Column Name="[_Period]" Member="_Period" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_RecorderTRef]" Member="_RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_RecorderRRef]" Member="_RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo]" Member="_LineNo" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Active]" Member="_Active" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_RecordKind]" Member="_RecordKind" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld44379RRef]" Member="_Fld44379RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld44380RRef]" Member="_Fld44380RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld44381RRef]" Member="_Fld44381RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld44382RRef]" Member="_Fld44382RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld44383RRef]" Member="_Fld44383RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld44384RRef]" Member="_Fld44384RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld44385]" Member="_Fld44385" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld44386]" Member="_Fld44386" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld44387]" Member="_Fld44387" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49979]" Member="_Fld49979" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49993]" Member="_Fld49993" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document846]" Member="_Document846">
+    <Type Name="_Document846">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_NumberPrefix]" Member="_NumberPrefix" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30539RRef]" Member="_Fld30539RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30541RRef]" Member="_Fld30541RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30542RRef]" Member="_Fld30542RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30544RRef]" Member="_Fld30544RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30547RRef]" Member="_Fld30547RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30548]" Member="_Fld30548" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30549RRef]" Member="_Fld30549RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30550RRef]" Member="_Fld30550RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30551]" Member="_Fld30551" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld30554RRef]" Member="_Fld30554RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49990]" Member="_Fld49990" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference50219]" Member="_Reference50219s">
+    <Type Name="_Reference50219">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document581]" Member="_Document581s">
+    <Type Name="_Document581">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_NumberPrefix]" Member="_NumberPrefix" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15865RRef]" Member="_Fld15865RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15866RRef]" Member="_Fld15866RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15867RRef]" Member="_Fld15867RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15868RRef]" Member="_Fld15868RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15869RRef]" Member="_Fld15869RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15870RRef]" Member="_Fld15870RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15871]" Member="_Fld15871" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15872]" Member="_Fld15872" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15873RRef]" Member="_Fld15873RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15874RRef]" Member="_Fld15874RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15875RRef]" Member="_Fld15875RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15876]" Member="_Fld15876" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49025RRef]" Member="_Fld49025RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49981]" Member="_Fld49981" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld50221RRef]" Member="_Fld50221RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference278]" Member="_Reference278s">
+    <Type Name="_Reference278">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_ParentIDRRef]" Member="_ParentIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7241RRef]" Member="_Fld7241RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7242RRef]" Member="_Fld7242RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7243]" Member="_Fld7243" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7244]" Member="_Fld7244" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7245]" Member="_Fld7245" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7246]" Member="_Fld7246" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7247]" Member="_Fld7247" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7248RRef]" Member="_Fld7248RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7249]" Member="_Fld7249" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7250]" Member="_Fld7250" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7251]" Member="_Fld7251" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7252]" Member="_Fld7252" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7253]" Member="_Fld7253" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7254RRef]" Member="_Fld7254RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7255RRef]" Member="_Fld7255RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7256RRef]" Member="_Fld7256RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld7257]" Member="_Fld7257" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document822]" Member="_Document822s">
+    <Type Name="_Document822">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_NumberPrefix]" Member="_NumberPrefix" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29539]" Member="_Fld29539" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29540RRef]" Member="_Fld29540RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29541RRef]" Member="_Fld29541RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29542RRef]" Member="_Fld29542RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29543RRef]" Member="_Fld29543RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29544RRef]" Member="_Fld29544RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29545RRef]" Member="_Fld29545RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29546RRef]" Member="_Fld29546RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29547RRef]" Member="_Fld29547RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29548]" Member="_Fld29548" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29549]" Member="_Fld29549" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29550]" Member="_Fld29550" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29551]" Member="_Fld29551" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29552]" Member="_Fld29552" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29553]" Member="_Fld29553" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29554_TYPE]" Member="_Fld29554_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29554_RTRef]" Member="_Fld29554_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29554_RRRef]" Member="_Fld29554_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29555RRef]" Member="_Fld29555RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29556RRef]" Member="_Fld29556RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29557RRef]" Member="_Fld29557RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29558RRef]" Member="_Fld29558RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29559]" Member="_Fld29559" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29560RRef]" Member="_Fld29560RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29561RRef]" Member="_Fld29561RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29562RRef]" Member="_Fld29562RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29563]" Member="_Fld29563" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29564RRef]" Member="_Fld29564RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29565]" Member="_Fld29565" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29566RRef]" Member="_Fld29566RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29567]" Member="_Fld29567" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29568]" Member="_Fld29568" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29569RRef]" Member="_Fld29569RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29570RRef]" Member="_Fld29570RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29571]" Member="_Fld29571" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29572RRef]" Member="_Fld29572RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29573RRef]" Member="_Fld29573RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29574]" Member="_Fld29574" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29575]" Member="_Fld29575" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29576RRef]" Member="_Fld29576RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29577RRef]" Member="_Fld29577RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29578RRef]" Member="_Fld29578RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29579]" Member="_Fld29579" Type="System.String" DbType="NVarChar(300) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29580RRef]" Member="_Fld29580RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29581RRef]" Member="_Fld29581RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29582]" Member="_Fld29582" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29583]" Member="_Fld29583" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29584RRef]" Member="_Fld29584RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29585RRef]" Member="_Fld29585RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29586]" Member="_Fld29586" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29587RRef]" Member="_Fld29587RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29588]" Member="_Fld29588" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29589]" Member="_Fld29589" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29590]" Member="_Fld29590" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29591]" Member="_Fld29591" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29592]" Member="_Fld29592" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29593RRef]" Member="_Fld29593RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29594RRef]" Member="_Fld29594RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29595RRef]" Member="_Fld29595RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29596RRef]" Member="_Fld29596RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29597]" Member="_Fld29597" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29598]" Member="_Fld29598" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29599RRef]" Member="_Fld29599RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29600]" Member="_Fld29600" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29601]" Member="_Fld29601" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29602]" Member="_Fld29602" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29603]" Member="_Fld29603" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29604_TYPE]" Member="_Fld29604_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29604_RTRef]" Member="_Fld29604_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29604_RRRef]" Member="_Fld29604_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29605]" Member="_Fld29605" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29606RRef]" Member="_Fld29606RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29607]" Member="_Fld29607" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49592]" Member="_Fld49592" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49593]" Member="_Fld49593" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49594RRef]" Member="_Fld49594RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document822_VT29611]" Member="_Document822_VT29611s">
+    <Type Name="_Document822_VT29611">
+      <Column Name="[_Document822_IDRRef]" Member="_Document822_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo29612]" Member="_LineNo29612" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29613RRef]" Member="_Fld29613RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29614RRef]" Member="_Fld29614RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29615RRef]" Member="_Fld29615RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29616RRef]" Member="_Fld29616RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29617]" Member="_Fld29617" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29618]" Member="_Fld29618" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29619RRef]" Member="_Fld29619RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29620]" Member="_Fld29620" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29621]" Member="_Fld29621" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29622RRef]" Member="_Fld29622RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29623]" Member="_Fld29623" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29624]" Member="_Fld29624" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29625]" Member="_Fld29625" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29626]" Member="_Fld29626" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29627]" Member="_Fld29627" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29628]" Member="_Fld29628" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29629]" Member="_Fld29629" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29630]" Member="_Fld29630" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29631RRef]" Member="_Fld29631RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29632]" Member="_Fld29632" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29633]" Member="_Fld29633" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29634_TYPE]" Member="_Fld29634_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29634_RTRef]" Member="_Fld29634_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29634_RRRef]" Member="_Fld29634_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29635]" Member="_Fld29635" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29637]" Member="_Fld29637" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld29638RRef]" Member="_Fld29638RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29639RRef]" Member="_Fld29639RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29640RRef]" Member="_Fld29640RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29641RRef]" Member="_Fld29641RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld29642RRef]" Member="_Fld29642RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49969]" Member="_Fld49969" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_InfoRg37054]" Member="_InfoRg37054s">
+    <Type Name="_InfoRg37054">
+      <Column Name="[_Period]" Member="_Period" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld37055RRef]" Member="_Fld37055RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld37056]" Member="_Fld37056" Type="System.Decimal" DbType="Decimal(10,4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld37057]" Member="_Fld37057" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document741]" Member="_Document741s">
+    <Type Name="_Document741">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25260RRef]" Member="_Fld25260RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25261RRef]" Member="_Fld25261RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25262_TYPE]" Member="_Fld25262_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25262_RTRef]" Member="_Fld25262_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25262_RRRef]" Member="_Fld25262_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25263RRef]" Member="_Fld25263RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25264RRef]" Member="_Fld25264RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25265]" Member="_Fld25265" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25266]" Member="_Fld25266" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25267RRef]" Member="_Fld25267RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25268RRef]" Member="_Fld25268RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25269RRef]" Member="_Fld25269RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25270RRef]" Member="_Fld25270RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25271]" Member="_Fld25271" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25272RRef]" Member="_Fld25272RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49984]" Member="_Fld49984" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld50224RRef]" Member="_Fld50224RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document741_VT25274]" Member="_Document741_VT25274s">
+    <Type Name="_Document741_VT25274">
+      <Column Name="[_Document741_IDRRef]" Member="_Document741_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo25275]" Member="_LineNo25275" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25276RRef]" Member="_Fld25276RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25277RRef]" Member="_Fld25277RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25278RRef]" Member="_Fld25278RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25279RRef]" Member="_Fld25279RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25280RRef]" Member="_Fld25280RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25281]" Member="_Fld25281" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25282]" Member="_Fld25282" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25283]" Member="_Fld25283" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25284]" Member="_Fld25284" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25285_TYPE]" Member="_Fld25285_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25285_RTRef]" Member="_Fld25285_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25285_RRRef]" Member="_Fld25285_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25286]" Member="_Fld25286" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25287RRef]" Member="_Fld25287RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25288RRef]" Member="_Fld25288RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld25289]" Member="_Fld25289" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25290]" Member="_Fld25290" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld25291RRef]" Member="_Fld25291RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld45652]" Member="_Fld45652" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document562]" Member="_Document562s">
+    <Type Name="_Document562">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Date_Time]" Member="_Date_Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_NumberPrefix]" Member="_NumberPrefix" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Number]" Member="_Number" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Posted]" Member="_Posted" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14898RRef]" Member="_Fld14898RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14899RRef]" Member="_Fld14899RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14900RRef]" Member="_Fld14900RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14901RRef]" Member="_Fld14901RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14902]" Member="_Fld14902" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14903RRef]" Member="_Fld14903RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14904RRef]" Member="_Fld14904RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14905RRef]" Member="_Fld14905RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14906RRef]" Member="_Fld14906RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49989]" Member="_Fld49989" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld50223RRef]" Member="_Fld50223RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document562_VT14907]" Member="_Document562_VT14907s">
+    <Type Name="_Document562_VT14907">
+      <Column Name="[_Document562_IDRRef]" Member="_Document562_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo14908]" Member="_LineNo14908" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14909RRef]" Member="_Fld14909RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14910RRef]" Member="_Fld14910RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14911RRef]" Member="_Fld14911RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14912]" Member="_Fld14912" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14913]" Member="_Fld14913" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14914RRef]" Member="_Fld14914RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14915]" Member="_Fld14915" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14916RRef]" Member="_Fld14916RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14917]" Member="_Fld14917" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14918RRef]" Member="_Fld14918RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14919RRef]" Member="_Fld14919RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14920RRef]" Member="_Fld14920RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14922]" Member="_Fld14922" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14923]" Member="_Fld14923" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld14924RRef]" Member="_Fld14924RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld14925RRef]" Member="_Fld14925RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld45650]" Member="_Fld45650" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference231_VT6192]" Member="_Reference231_VT6192s">
+    <Type Name="_Reference231_VT6192">
+      <Column Name="[_Reference231_IDRRef]" Member="_Reference231_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo6193]" Member="_LineNo6193" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld6194RRef]" Member="_Fld6194RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld6195_TYPE]" Member="_Fld6195_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld6195_L]" Member="_Fld6195_L" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld6195_N]" Member="_Fld6195_N" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld6195_T]" Member="_Fld6195_T" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld6195_S]" Member="_Fld6195_S" Type="System.String" DbType="NVarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld6195_RTRef]" Member="_Fld6195_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld6195_RRRef]" Member="_Fld6195_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld6196]" Member="_Fld6196" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference231]" Member="_Reference231s">
+    <Type Name="_Reference231">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_ParentIDRRef]" Member="_ParentIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Folder]" Member="_Folder" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Code]" Member="_Code" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld6128]" Member="_Fld6128" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6116]" Member="_Fld6116" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="[_Fld6117RRef]" Member="_Fld6117RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6118RRef]" Member="_Fld6118RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6119]" Member="_Fld6119" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6120]" Member="_Fld6120" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6121]" Member="_Fld6121" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6122]" Member="_Fld6122" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6123]" Member="_Fld6123" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6124]" Member="_Fld6124" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6125RRef]" Member="_Fld6125RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6126RRef]" Member="_Fld6126RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6127RRef]" Member="_Fld6127RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6157RRef]" Member="_Fld6157RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6129RRef]" Member="_Fld6129RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6130RRef]" Member="_Fld6130RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6131]" Member="_Fld6131" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6132]" Member="_Fld6132" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6133RRef]" Member="_Fld6133RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6134]" Member="_Fld6134" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6135]" Member="_Fld6135" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6136]" Member="_Fld6136" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6137]" Member="_Fld6137" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6138RRef]" Member="_Fld6138RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6139]" Member="_Fld6139" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6140]" Member="_Fld6140" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6141]" Member="_Fld6141" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6142RRef]" Member="_Fld6142RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6143]" Member="_Fld6143" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld6144RRef]" Member="_Fld6144RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6145RRef]" Member="_Fld6145RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6115]" Member="_Fld6115" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="[_Fld6147RRef]" Member="_Fld6147RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6149]" Member="_Fld6149" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="[_Fld6150]" Member="_Fld6150" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="[_Fld6151]" Member="_Fld6151" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6152]" Member="_Fld6152" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6153RRef]" Member="_Fld6153RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6154RRef]" Member="_Fld6154RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6155RRef]" Member="_Fld6155RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6156]" Member="_Fld6156" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="[_Fld6146RRef]" Member="_Fld6146RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6158RRef]" Member="_Fld6158RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6159RRef]" Member="_Fld6159RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6160RRef]" Member="_Fld6160RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6161RRef]" Member="_Fld6161RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6162RRef]" Member="_Fld6162RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6163]" Member="_Fld6163" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6164]" Member="_Fld6164" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6165]" Member="_Fld6165" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6166]" Member="_Fld6166" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6167RRef]" Member="_Fld6167RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6168RRef]" Member="_Fld6168RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6169]" Member="_Fld6169" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld48682RRef]" Member="_Fld48682RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld48683RRef]" Member="_Fld48683RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6170]" Member="_Fld6170" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6171]" Member="_Fld6171" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6172]" Member="_Fld6172" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6173RRef]" Member="_Fld6173RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6174RRef]" Member="_Fld6174RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6175RRef]" Member="_Fld6175RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6176]" Member="_Fld6176" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="[_Fld6177RRef]" Member="_Fld6177RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6178RRef]" Member="_Fld6178RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6179RRef]" Member="_Fld6179RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6180_TYPE]" Member="_Fld6180_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6180_RTRef]" Member="_Fld6180_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="[_Fld6180_RRRef]" Member="_Fld6180_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6181_TYPE]" Member="_Fld6181_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6181_RTRef]" Member="_Fld6181_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="[_Fld6181_RRRef]" Member="_Fld6181_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6182RRef]" Member="_Fld6182RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6183]" Member="_Fld6183" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6184RRef]" Member="_Fld6184RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6185RRef]" Member="_Fld6185RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6186RRef]" Member="_Fld6186RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6187RRef]" Member="_Fld6187RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6188]" Member="_Fld6188" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld6189RRef]" Member="_Fld6189RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6190RRef]" Member="_Fld6190RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld6191RRef]" Member="_Fld6191RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld48684]" Member="_Fld48684" Type="System.Decimal" DbType="Decimal(5,3)" CanBeNull="true" />
+      <Column Name="[_Fld50822RRef]" Member="_Fld50822RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld50823]" Member="_Fld50823" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld50824]" Member="_Fld50824" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld50825RRef]" Member="_Fld50825RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld50826RRef]" Member="_Fld50826RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld50827]" Member="_Fld50827" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="[_Fld50828RRef]" Member="_Fld50828RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld50829]" Member="_Fld50829" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Reference396]" Member="_Reference396s">
+    <Type Name="_Reference396">
+      <Column Name="[_IDRRef]" Member="_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Version]" Member="_Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="[_Marked]" Member="_Marked" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_PredefinedID]" Member="_PredefinedID" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_ParentIDRRef]" Member="_ParentIDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Folder]" Member="_Folder" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Description]" Member="_Description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld10210RRef]" Member="_Fld10210RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld10211]" Member="_Fld10211" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10212]" Member="_Fld10212" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10213]" Member="_Fld10213" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10214]" Member="_Fld10214" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10215]" Member="_Fld10215" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10216]" Member="_Fld10216" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10217]" Member="_Fld10217" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10218RRef]" Member="_Fld10218RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10219]" Member="_Fld10219" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10220RRef]" Member="_Fld10220RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10221RRef]" Member="_Fld10221RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld48811RRef]" Member="_Fld48811RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10222RRef]" Member="_Fld10222RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10223]" Member="_Fld10223" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="[_Fld10224RRef]" Member="_Fld10224RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10225RRef]" Member="_Fld10225RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10226RRef]" Member="_Fld10226RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10227RRef]" Member="_Fld10227RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10228]" Member="_Fld10228" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10229RRef]" Member="_Fld10229RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10230RRef]" Member="_Fld10230RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10231]" Member="_Fld10231" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10232]" Member="_Fld10232" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld48812]" Member="_Fld48812" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10234]" Member="_Fld10234" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="[_Fld10235]" Member="_Fld10235" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="[_Fld10236]" Member="_Fld10236" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="[_Fld10237]" Member="_Fld10237" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="[_Fld10238]" Member="_Fld10238" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="[_Fld10239]" Member="_Fld10239" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10240]" Member="_Fld10240" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10241]" Member="_Fld10241" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10242RRef]" Member="_Fld10242RRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10243_TYPE]" Member="_Fld10243_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10243_RTRef]" Member="_Fld10243_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="[_Fld10243_RRRef]" Member="_Fld10243_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="[_Fld10244]" Member="_Fld10244" Type="System.Decimal" DbType="Decimal(3,0)" CanBeNull="true" />
+      <Column Name="[_Fld10245]" Member="_Fld10245" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld10247]" Member="_Fld10247" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="[_Fld10246]" Member="_Fld10246" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="[_Fld56714]" Member="_Fld56714" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_AccumRg42790]" Member="_AccumRg42790s">
+    <Type Name="_AccumRg42790">
+      <Column Name="[_Period]" Member="_Period" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="[_RecorderTRef]" Member="_RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_RecorderRRef]" Member="_RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo]" Member="_LineNo" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Active]" Member="_Active" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_RecordKind]" Member="_RecordKind" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld42791RRef]" Member="_Fld42791RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42792RRef]" Member="_Fld42792RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42793RRef]" Member="_Fld42793RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42794_TYPE]" Member="_Fld42794_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42794_RTRef]" Member="_Fld42794_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42794_RRRef]" Member="_Fld42794_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42795RRef]" Member="_Fld42795RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42796RRef]" Member="_Fld42796RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42797RRef]" Member="_Fld42797RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42798]" Member="_Fld42798" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld42799RRef]" Member="_Fld42799RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42800_TYPE]" Member="_Fld42800_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42800_RTRef]" Member="_Fld42800_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42800_RRRef]" Member="_Fld42800_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42801]" Member="_Fld42801" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld42802RRef]" Member="_Fld42802RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42803]" Member="_Fld42803" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld42805RRef]" Member="_Fld42805RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42806RRef]" Member="_Fld42806RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42807RRef]" Member="_Fld42807RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42808_TYPE]" Member="_Fld42808_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42808_RTRef]" Member="_Fld42808_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42808_RRRef]" Member="_Fld42808_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42809_TYPE]" Member="_Fld42809_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42809_RTRef]" Member="_Fld42809_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42809_RRRef]" Member="_Fld42809_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58402RRef]" Member="_Fld58402RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42810RRef]" Member="_Fld42810RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42811]" Member="_Fld42811" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42812RRef]" Member="_Fld42812RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49978]" Member="_Fld49978" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49992]" Member="_Fld49992" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld58403]" Member="_Fld58403" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld42813RRef]" Member="_Fld42813RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58404_TYPE]" Member="_Fld58404_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58404_RTRef]" Member="_Fld58404_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58404_RRRef]" Member="_Fld58404_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58405]" Member="_Fld58405" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_AccumRg41567]" Member="_AccumRg41567s">
+    <Type Name="_AccumRg41567">
+      <Column Name="[_Period]" Member="_Period" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="[_RecorderTRef]" Member="_RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_RecorderRRef]" Member="_RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo]" Member="_LineNo" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Active]" Member="_Active" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41568RRef]" Member="_Fld41568RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41569RRef]" Member="_Fld41569RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41570RRef]" Member="_Fld41570RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41571]" Member="_Fld41571" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld41572_TYPE]" Member="_Fld41572_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41572_RTRef]" Member="_Fld41572_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41572_RRRef]" Member="_Fld41572_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41573RRef]" Member="_Fld41573RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41574RRef]" Member="_Fld41574RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41575RRef]" Member="_Fld41575RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41576_TYPE]" Member="_Fld41576_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41576_RTRef]" Member="_Fld41576_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41576_RRRef]" Member="_Fld41576_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41577_TYPE]" Member="_Fld41577_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41577_RTRef]" Member="_Fld41577_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41577_RRRef]" Member="_Fld41577_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58289_TYPE]" Member="_Fld58289_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58289_RTRef]" Member="_Fld58289_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld58289_RRRef]" Member="_Fld58289_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld41578]" Member="_Fld41578" Type="System.Decimal" DbType="Decimal(10,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld41579RRef]" Member="_Fld41579RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld49977]" Member="_Fld49977" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld49991]" Member="_Fld49991" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_DimHash]" Member="_DimHash" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[_Document581_VT15877]" Member="_Document581_VT15877s">
+    <Type Name="_Document581_VT15877">
+      <Column Name="[_Document581_IDRRef]" Member="_Document581_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld1670]" Member="_Fld1670" Type="System.Decimal" DbType="Decimal(7,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_KeyField]" Member="_KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_LineNo15878]" Member="_LineNo15878" Type="System.Decimal" DbType="Decimal(5,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15879RRef]" Member="_Fld15879RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15880RRef]" Member="_Fld15880RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15881RRef]" Member="_Fld15881RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15882RRef]" Member="_Fld15882RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15883]" Member="_Fld15883" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15884]" Member="_Fld15884" Type="System.Decimal" DbType="Decimal(15,3) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15885]" Member="_Fld15885" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15886]" Member="_Fld15886" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15887RRef]" Member="_Fld15887RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15888RRef]" Member="_Fld15888RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15889]" Member="_Fld15889" Type="System.Decimal" DbType="Decimal(2,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15890RRef]" Member="_Fld15890RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15891RRef]" Member="_Fld15891RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15892]" Member="_Fld15892" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15893]" Member="_Fld15893" Type="System.String" DbType="NVarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld15894RRef]" Member="_Fld15894RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15895RRef]" Member="_Fld15895RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15896RRef]" Member="_Fld15896RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15897_TYPE]" Member="_Fld15897_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15897_RTRef]" Member="_Fld15897_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15897_RRRef]" Member="_Fld15897_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15898_TYPE]" Member="_Fld15898_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15898_RTRef]" Member="_Fld15898_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15898_RRRef]" Member="_Fld15898_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15899]" Member="_Fld15899" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15900RRef]" Member="_Fld15900RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15901RRef]" Member="_Fld15901RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld15902RRef]" Member="_Fld15902RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld45651]" Member="_Fld45651" Type="System.Decimal" DbType="Decimal(15,0) NOT NULL" CanBeNull="false" />
+      <Column Name="[_Fld56950_TYPE]" Member="_Fld56950_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56950_RTRef]" Member="_Fld56950_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56950_RRRef]" Member="_Fld56950_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56951RRef]" Member="_Fld56951RRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56952_TYPE]" Member="_Fld56952_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56952_RTRef]" Member="_Fld56952_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56952_RRRef]" Member="_Fld56952_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56953_TYPE]" Member="_Fld56953_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56953_RTRef]" Member="_Fld56953_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56953_RRRef]" Member="_Fld56953_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56954_TYPE]" Member="_Fld56954_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56954_RTRef]" Member="_Fld56954_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56954_RRRef]" Member="_Fld56954_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="[_Fld56955]" Member="_Fld56955" Type="System.Data.Linq.Binary" DbType="Binary(1) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

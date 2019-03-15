@@ -1,0 +1,968 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="APReport" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.50.13;Initial Catalog=APReport;User ID=sa;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="ERPReportUtils.Properties.Settings" SettingsPropertyName="ERPReportDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DimDates" Member="DimDates">
+    <Type Name="DimDates">
+      <Column Name="DateKey" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DateTimeStamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DateName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="WeekDay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WeekDateName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Week" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WeekName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Month" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MonthName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Quarter" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuarterName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Year" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YearName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="DimDates_FactPOS" Member="FactPOS" ThisKey="DateKey" OtherKey="DateKey" Type="FactPOS" />
+      <Association Name="DimDates_FactPrices" Member="FactPrices" ThisKey="DateKey" OtherKey="DateKey" Type="FactPrices" />
+      <Association Name="DimDates_FactPricesHistory" Member="FactPricesHistory" ThisKey="DateKey" OtherKey="DateKey" Type="FactPricesHistory" />
+      <Association Name="DimDates_FactRemains" Member="FactRemains" ThisKey="DateKey" OtherKey="DateKey" Type="FactRemains" />
+      <Association Name="DimDates_FactConsignmentMoves" Member="FactConsignmentMoves" ThisKey="DateKey" OtherKey="DateKey" Type="FactConsignmentMoves" />
+      <Association Name="DimDates_FactConsignmentRemains" Member="FactConsignmentRemains" ThisKey="DateKey" OtherKey="DateKey" Type="FactConsignmentRemains" />
+      <Association Name="DimDates_DocProductionCosts" Member="DocProductionCosts" ThisKey="DateKey" OtherKey="DateKey" Type="DocProductionCosts" />
+      <Association Name="DimDates_FactProductionTree" Member="FactProductionTree" ThisKey="DateKey" OtherKey="DateKey" Type="FactProductionTree" />
+      <Association Name="DimDates_DocProduction" Member="DocProductions" ThisKey="DateKey" OtherKey="DateKey" Type="DocProduction" />
+      <Association Name="DimDates_DocTransferProduction" Member="DocTransferProductions" ThisKey="DateKey" OtherKey="DateKey" Type="DocTransferProduction" />
+      <Association Name="DimDates_FactMaterialsInProduction" Member="FactMaterialsInProductions" ThisKey="DateKey" OtherKey="DateKey" Type="FactMaterialsInProduction" />
+      <Association Name="DimDates_FactProduction" Member="FactProductions" ThisKey="DateKey" OtherKey="DateKey" Type="FactProduction" />
+      <Association Name="DimDates_FactProductionRemain" Member="FactProductionRemains" ThisKey="DateKey" OtherKey="DateKey" Type="FactProductionRemain" />
+      <Association Name="DimDates_FactMovement" Member="FactMovements" ThisKey="DateKey" OtherKey="DateKey" Type="FactMovement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimGroups" Member="DimGroups">
+    <Type Name="DimGroups">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ParentGroupID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimGroups_DimGoods" Member="DimGoods" ThisKey="ID" OtherKey="GroupID" Type="DimGoods" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimWarehouses" Member="DimWarehouses">
+    <Type Name="DimWarehouses">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimWarehouses_DimPOSRegisters" Member="DimPOSRegisters" ThisKey="ID" OtherKey="WarehouseID" Type="DimPOSRegisters" />
+      <Association Name="DimWarehouses_FactPOS" Member="FactPOS" ThisKey="ID" OtherKey="WarehouseID" Type="FactPOS" />
+      <Association Name="DimWarehouses_DimGoodAnalyticalKeys" Member="DimGoodAnalyticalKeys" ThisKey="ID" OtherKey="WarehouseID" Type="DimGoodAnalyticalKeys" />
+      <Association Name="DimWarehouses_FactRemains" Member="FactRemains" ThisKey="ID" OtherKey="WarehouseID" Type="FactRemains" />
+      <Association Name="DimWarehouses_FactConsignmentMoves" Member="FactConsignmentMoves" ThisKey="ID" OtherKey="WarehouseID" Type="FactConsignmentMoves" />
+      <Association Name="DimWarehouses_FactConsignmentRemains" Member="FactConsignmentRemains" ThisKey="ID" OtherKey="FromWarehouseID" Type="FactConsignmentRemains" />
+      <Association Name="DimWarehouses_FactConsignmentRemains1" Member="FactConsignmentRemains1" ThisKey="ID" OtherKey="ToWarehouseID" Type="FactConsignmentRemains" />
+      <Association Name="DimWarehouses_DocProductionLines" Member="DocProductionLines" ThisKey="ID" OtherKey="WarehouseID" Type="DocProductionLines" />
+      <Association Name="DimWarehouses_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="WarehouseID" Type="FactProductionTree" />
+      <Association Name="DimWarehouses_DocProduction" Member="DocProductions" ThisKey="ID" OtherKey="WarehouseID" Type="DocProduction" />
+      <Association Name="DimWarehouses_DocSale" Member="DocSales" ThisKey="ID" OtherKey="WarehouseID" Type="DocSale" />
+      <Association Name="DimWarehouses_DocSalesLine" Member="DocSalesLines" ThisKey="ID" OtherKey="WarehouseID" Type="DocSalesLine" />
+      <Association Name="DimWarehouses_DocTransferProduction" Member="DocTransferProductions" ThisKey="ID" OtherKey="WarehouseID" Type="DocTransferProduction" />
+      <Association Name="DimWarehouses_FactProduction" Member="FactProductions" ThisKey="ID" OtherKey="ToWarehouseID" Type="FactProduction" />
+      <Association Name="DimWarehouses_FactMovement" Member="FactMovements" ThisKey="ID" OtherKey="WarehouseID" Type="FactMovement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimMovementTypes" Member="DimMovementTypes">
+    <Type Name="DimMovementTypes">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimGoods" Member="DimGoods">
+    <Type Name="DimGoods">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Artikul" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WeightGramm1Pcs" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="WeightGrammNominal" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="WeightGrammDeviation" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnit" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GroupID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodTypeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimGoods_FactPrices" Member="FactPrices" ThisKey="ID" OtherKey="GoodID" Type="FactPrices" />
+      <Association Name="DimGoods_FactPricesHistory" Member="FactPricesHistory" ThisKey="ID" OtherKey="GoodID" Type="FactPricesHistory" />
+      <Association Name="DimGoods_DimGoodAnalyticalKeys" Member="DimGoodAnalyticalKeys" ThisKey="ID" OtherKey="GoodID" Type="DimGoodAnalyticalKeys" />
+      <Association Name="DimGoods_FactPOSLines" Member="FactPOSLines" ThisKey="ID" OtherKey="GoodID" Type="FactPOSLines" />
+      <Association Name="DimGoods_FactRemains" Member="FactRemains" ThisKey="ID" OtherKey="GoodID" Type="FactRemains" />
+      <Association Name="DimGoods_FactConsignmentMoves" Member="FactConsignmentMoves" ThisKey="ID" OtherKey="RawGoodID" Type="FactConsignmentMoves" />
+      <Association Name="DimGoods_FactConsignmentRemains" Member="FactConsignmentRemains" ThisKey="ID" OtherKey="GoodID" Type="FactConsignmentRemains" />
+      <Association Name="DimGoods_DocProductionCosts" Member="DocProductionCosts" ThisKey="ID" OtherKey="MasterGoodID" Type="DocProductionCosts" />
+      <Association Name="DimGoods_DocProductionCostIn" Member="DocProductionCostIn" ThisKey="ID" OtherKey="GoodID" Type="DocProductionCostIn" />
+      <Association Name="DimGoods_DocProductionCostOut" Member="DocProductionCostOut" ThisKey="ID" OtherKey="GoodID" Type="DocProductionCostOut" />
+      <Association Name="DimGoods_DocProductionCostMaterials" Member="DocProductionCostMaterials" ThisKey="ID" OtherKey="GoodID" Type="DocProductionCostMaterials" />
+      <Association Name="DimGoods_DocProductionLines" Member="DocProductionLines" ThisKey="ID" OtherKey="GoodID" Type="DocProductionLines" />
+      <Association Name="DimGoods_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="FirstRawMaterialGoodID" Type="FactProductionTree" />
+      <Association Name="DimGoods_FactProductionTree1" Member="FactProductionTree1" ThisKey="ID" OtherKey="PrepackGoodID" Type="FactProductionTree" />
+      <Association Name="DimGoods_FactProductionTree2" Member="FactProductionTree2" ThisKey="ID" OtherKey="RawGoodID" Type="FactProductionTree" />
+      <Association Name="DimGoods_DocSalesLine" Member="DocSalesLines" ThisKey="ID" OtherKey="GoodID" Type="DocSalesLine" />
+      <Association Name="DimGoods_DocTransferProductionLine" Member="DocTransferProductionLines" ThisKey="ID" OtherKey="GoodID" Type="DocTransferProductionLine" />
+      <Association Name="DimGoods_FactMaterialsInProduction" Member="FactMaterialsInProductions" ThisKey="ID" OtherKey="GoodID" Type="FactMaterialsInProduction" />
+      <Association Name="DimGoods_FactProduction" Member="FactProductions" ThisKey="ID" OtherKey="GoodID" Type="FactProduction" />
+      <Association Name="DimGoods_FactProductionRemain" Member="FactProductionRemains" ThisKey="ID" OtherKey="GoodID" Type="FactProductionRemain" />
+      <Association Name="DimGoods_FactMovement" Member="FactMovements" ThisKey="ID" OtherKey="GoodID" Type="FactMovement" />
+      <Association Name="DimGroups_DimGoods" Member="DimGroups" ThisKey="GroupID" OtherKey="ID" Type="DimGroups" IsForeignKey="true" />
+      <Association Name="DimGoodTypes_DimGoods" Member="DimGoodTypes" ThisKey="GoodTypeID" OtherKey="ID" Type="DimGoodTypes" IsForeignKey="true" />
+      <Association Name="DimUnits_DimGoods" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimGoodTypes" Member="DimGoodTypes">
+    <Type Name="DimGoodTypes">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimGoodTypes_DimGoods" Member="DimGoods" ThisKey="ID" OtherKey="GoodTypeID" Type="DimGoods" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimUnits" Member="DimUnits">
+    <Type Name="DimUnits">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimUnits_DimGoods" Member="DimGoods" ThisKey="ID" OtherKey="BaseUnitID" Type="DimGoods" />
+      <Association Name="DimUnits_FactPrices" Member="FactPrices" ThisKey="ID" OtherKey="UnitID" Type="FactPrices" />
+      <Association Name="DimUnits_FactPrices1" Member="FactPrices1" ThisKey="ID" OtherKey="BaseUnitID" Type="FactPrices" />
+      <Association Name="DimUnits_FactPricesHistory" Member="FactPricesHistory" ThisKey="ID" OtherKey="UnitID" Type="FactPricesHistory" />
+      <Association Name="DimUnits_FactPOSLines" Member="FactPOSLines" ThisKey="ID" OtherKey="BaseUnitID" Type="FactPOSLines" />
+      <Association Name="DimUnits_DimUnitConversion" Member="DimUnitConversion" ThisKey="ID" OtherKey="FromUnitID" Type="DimUnitConversion" />
+      <Association Name="DimUnits_DimUnitConversion1" Member="DimUnitConversion1" ThisKey="ID" OtherKey="ToUnitID" Type="DimUnitConversion" />
+      <Association Name="DimUnits_FactRemains" Member="FactRemains" ThisKey="ID" OtherKey="BaseUnitID" Type="FactRemains" />
+      <Association Name="DimUnits_FactConsignmentMoves" Member="FactConsignmentMoves" ThisKey="ID" OtherKey="RawUnitID" Type="FactConsignmentMoves" />
+      <Association Name="DimUnits_FactConsignmentMoves1" Member="FactConsignmentMoves1" ThisKey="ID" OtherKey="RawBaseUnitID" Type="FactConsignmentMoves" />
+      <Association Name="DimUnits_FactConsignmentRemains" Member="FactConsignmentRemains" ThisKey="ID" OtherKey="BaseUnitID" Type="FactConsignmentRemains" />
+      <Association Name="DimUnits_DocProductionCosts" Member="DocProductionCosts" ThisKey="ID" OtherKey="UnitID" Type="DocProductionCosts" />
+      <Association Name="DimUnits_DocProductionCosts1" Member="DocProductionCosts1" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCosts" />
+      <Association Name="DimUnits_DocProductionCostIn" Member="DocProductionCostIn" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCostIn" />
+      <Association Name="DimUnits_DocProductionCostIn1" Member="DocProductionCostIn1" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCostIn" />
+      <Association Name="DimUnits_DocProductionCostOut" Member="DocProductionCostOut" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCostOut" />
+      <Association Name="DimUnits_DocProductionCostOut1" Member="DocProductionCostOut1" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCostOut" />
+      <Association Name="DimUnits_DocProductionCostMaterials" Member="DocProductionCostMaterials" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCostMaterials" />
+      <Association Name="DimUnits_DocProductionCostMaterials1" Member="DocProductionCostMaterials1" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionCostMaterials" />
+      <Association Name="DimUnits_DocProductionLines" Member="DocProductionLines" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionLines" />
+      <Association Name="DimUnits_DocProductionLines1" Member="DocProductionLines1" ThisKey="ID" OtherKey="BaseUnitID" Type="DocProductionLines" />
+      <Association Name="DimUnits_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="PrepackUnitID" Type="FactProductionTree" />
+      <Association Name="DimUnits_FactProductionTree1" Member="FactProductionTree1" ThisKey="ID" OtherKey="PrepackBaseUnitID" Type="FactProductionTree" />
+      <Association Name="DimUnits_FactProductionTree2" Member="FactProductionTree2" ThisKey="ID" OtherKey="RawUnitID" Type="FactProductionTree" />
+      <Association Name="DimUnits_FactProductionTree3" Member="FactProductionTree3" ThisKey="ID" OtherKey="RawBaseUnitID" Type="FactProductionTree" />
+      <Association Name="DimUnits_DocSalesLine" Member="DocSalesLines" ThisKey="ID" OtherKey="BaseUnitID" Type="DocSalesLine" />
+      <Association Name="DimUnits_DocSalesLine1" Member="DocSalesLines1" ThisKey="ID" OtherKey="BaseUnitID" Type="DocSalesLine" />
+      <Association Name="DimUnits_DocTransferProductionLine" Member="DocTransferProductionLines" ThisKey="ID" OtherKey="BaseUnitID" Type="DocTransferProductionLine" />
+      <Association Name="DimUnits_DocTransferProductionLine1" Member="DocTransferProductionLines1" ThisKey="ID" OtherKey="UnitID" Type="DocTransferProductionLine" />
+      <Association Name="DimUnits_FactMaterialsInProduction" Member="FactMaterialsInProductions" ThisKey="ID" OtherKey="BaseUnitID" Type="FactMaterialsInProduction" />
+      <Association Name="DimUnits_FactMaterialsInProduction1" Member="FactMaterialsInProductions1" ThisKey="ID" OtherKey="UnitID" Type="FactMaterialsInProduction" />
+      <Association Name="DimUnits_FactProduction" Member="FactProductions" ThisKey="ID" OtherKey="BaseUnitID" Type="FactProduction" />
+      <Association Name="DimUnits_FactProduction1" Member="FactProductions1" ThisKey="ID" OtherKey="UnitID" Type="FactProduction" />
+      <Association Name="DimUnits_FactProductionRemain" Member="FactProductionRemains" ThisKey="ID" OtherKey="UnitID" Type="FactProductionRemain" />
+      <Association Name="DimUnits_FactMovement" Member="FactMovements" ThisKey="ID" OtherKey="BaseUnitID" Type="FactMovement" />
+      <Association Name="DimUnits_FactMovement1" Member="FactMovements1" ThisKey="ID" OtherKey="UnitID" Type="FactMovement" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimPriceTypes" Member="DimPriceTypes">
+    <Type Name="DimPriceTypes">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(50)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DimPriceTypes_FactPOS" Member="FactPOS" ThisKey="ID" OtherKey="PriceTypeID" Type="FactPOS" />
+      <Association Name="DimPriceTypes_FactPrices" Member="FactPrices" ThisKey="ID" OtherKey="PriceTypeID" Type="FactPrices" />
+      <Association Name="DimPriceTypes_FactPricesHistory" Member="FactPricesHistory" ThisKey="ID" OtherKey="PriceTypeID" Type="FactPricesHistory" />
+      <Association Name="DimPriceTypes_DocProduction" Member="DocProductions" ThisKey="ID" OtherKey="PriceTypeID" Type="DocProduction" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimCurrencies" Member="DimCurrencies">
+    <Type Name="DimCurrencies">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DimCurrencies_FactPOS" Member="FactPOS" ThisKey="ID" OtherKey="CurrencyID" Type="FactPOS" />
+      <Association Name="DimCurrencies_FactPrices" Member="FactPrices" ThisKey="ID" OtherKey="CurrencyID" Type="FactPrices" />
+      <Association Name="DimCurrencies_FactPricesHistory" Member="FactPricesHistory" ThisKey="ID" OtherKey="CurrencyID" Type="FactPricesHistory" />
+      <Association Name="DimCurrencies_DocProduction" Member="DocProductions" ThisKey="ID" OtherKey="CurrencyID" Type="DocProduction" />
+      <Association Name="DimCurrencies_DocSale" Member="DocSales" ThisKey="ID" OtherKey="CurrencyID" Type="DocSale" />
+      <Association Name="DimCurrencies_FactCurrencyRate" Member="FactCurrencyRates" ThisKey="ID" OtherKey="CurrencyID" Type="FactCurrencyRate" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimDepartments" Member="DimDepartments">
+    <Type Name="DimDepartments">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GroupID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimDepartments_DimDepartments" Member="DimDepartments2" ThisKey="ID" OtherKey="GroupID" Type="DimDepartments" />
+      <Association Name="DimDepartments_FactRemains" Member="FactRemains" ThisKey="ID" OtherKey="DepartmentID" Type="FactRemains" />
+      <Association Name="DimDepartments_FactConsignmentMoves" Member="FactConsignmentMoves" ThisKey="ID" OtherKey="DepartmentID" Type="FactConsignmentMoves" />
+      <Association Name="DimDepartments_DocProductionCosts" Member="DocProductionCosts" ThisKey="ID" OtherKey="DepartmentID" Type="DocProductionCosts" />
+      <Association Name="DimDepartments_DocProductionCostIn" Member="DocProductionCostIn" ThisKey="ID" OtherKey="DepartmentID" Type="DocProductionCostIn" />
+      <Association Name="DimDepartments_DocProductionCostOut" Member="DocProductionCostOut" ThisKey="ID" OtherKey="DepartmentID" Type="DocProductionCostOut" />
+      <Association Name="DimDepartments_DocProductionCostMaterials" Member="DocProductionCostMaterials" ThisKey="ID" OtherKey="DepartmentID" Type="DocProductionCostMaterials" />
+      <Association Name="DimDepartments_DocProductionLines" Member="DocProductionLines" ThisKey="ID" OtherKey="DepartmentID" Type="DocProductionLines" />
+      <Association Name="DimDepartments_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="DepartmentID" Type="FactProductionTree" />
+      <Association Name="DimDepartments_DocProduction" Member="DocProductions" ThisKey="ID" OtherKey="DepartmentID" Type="DocProduction" />
+      <Association Name="DimDepartments_DocTransferProduction" Member="DocTransferProductions" ThisKey="ID" OtherKey="DepartmentID" Type="DocTransferProduction" />
+      <Association Name="DimDepartments_FactMaterialsInProduction" Member="FactMaterialsInProductions" ThisKey="ID" OtherKey="DepartmentID" Type="FactMaterialsInProduction" />
+      <Association Name="DimDepartments_FactProduction" Member="FactProductions" ThisKey="ID" OtherKey="FromDepartmentID" Type="FactProduction" />
+      <Association Name="DimDepartments_FactProductionRemain" Member="FactProductionRemains" ThisKey="ID" OtherKey="DepartmentID" Type="FactProductionRemain" />
+      <Association Name="DimDepartments_FactMovement" Member="FactMovements" ThisKey="ID" OtherKey="DepartmentID" Type="FactMovement" />
+      <Association Name="DimDepartments_DimDepartments" Member="DimDepartments1" ThisKey="GroupID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimPOSRegisters" Member="DimPOSRegisters">
+    <Type Name="DimPOSRegisters">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(50)" CanBeNull="true" />
+      <Association Name="DimPOSRegisters_FactPOS" Member="FactPOS" ThisKey="ID" OtherKey="POSRegisterID" Type="FactPOS" />
+      <Association Name="DimWarehouses_DimPOSRegisters" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimPeople" Member="DimPeople">
+    <Type Name="DimPeople">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimPeople_FactPOS" Member="FactPOS" ThisKey="ID" OtherKey="CasherID" Type="FactPOS" />
+      <Association Name="DimPeople_DimSpecifications" Member="DimSpecifications" ThisKey="ID" OtherKey="UserID" Type="DimSpecifications" />
+      <Association Name="DimPeople_FactPOSLines" Member="FactPOSLines" ThisKey="ID" OtherKey="CasherID" Type="FactPOSLines" />
+      <Association Name="DimPeople_DocProductionCosts" Member="DocProductionCosts" ThisKey="ID" OtherKey="UserID" Type="DocProductionCosts" />
+      <Association Name="DimPeople_DocProduction" Member="DocProductions" ThisKey="ID" OtherKey="UserID" Type="DocProduction" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactPOS" Member="FactPOS">
+    <Type Name="FactPOS">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumberPrefix" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ChequeNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="DocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Posted" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="CasherID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="POSCheckNumber" Type="System.Decimal" DbType="Decimal(8,0)" CanBeNull="true" />
+      <Column Name="AmountCash" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="AmountPayCards" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="AmountDoc" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PriceTypeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="POSRegisterID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DiscountCardNumber" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Refund" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="FactPOS_FactPOSLines" Member="FactPOSLines" ThisKey="ID" OtherKey="DocID" Type="FactPOSLines" />
+      <Association Name="DimCurrencies_FactPOS" Member="DimCurrencies" ThisKey="CurrencyID" OtherKey="ID" Type="DimCurrencies" IsForeignKey="true" />
+      <Association Name="DimDates_FactPOS" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimPeople_FactPOS" Member="DimPeople" ThisKey="CasherID" OtherKey="ID" Type="DimPeople" IsForeignKey="true" />
+      <Association Name="DimPOSRegisters_FactPOS" Member="DimPOSRegisters" ThisKey="POSRegisterID" OtherKey="ID" Type="DimPOSRegisters" IsForeignKey="true" />
+      <Association Name="DimPriceTypes_FactPOS" Member="DimPriceTypes" ThisKey="PriceTypeID" OtherKey="ID" Type="DimPriceTypes" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactPOS" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactPrices" Member="FactPrices">
+    <Type Name="FactPrices">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PriceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PriceDateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PricePerUnit" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PriceTypeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimCurrencies_FactPrices" Member="DimCurrencies" ThisKey="CurrencyID" OtherKey="ID" Type="DimCurrencies" IsForeignKey="true" />
+      <Association Name="DimDates_FactPrices" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimPriceTypes_FactPrices" Member="DimPriceTypes" ThisKey="PriceTypeID" OtherKey="ID" Type="DimPriceTypes" IsForeignKey="true" />
+      <Association Name="DimUnits_FactPrices" Member="DimUnits" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactPrices1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimGoods_FactPrices" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactPricesHistory" Member="FactPricesHistory">
+    <Type Name="FactPricesHistory">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PriceTypeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Period" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="GoodRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="UnitRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimCurrencies_FactPricesHistory" Member="DimCurrencies" ThisKey="CurrencyID" OtherKey="ID" Type="DimCurrencies" IsForeignKey="true" />
+      <Association Name="DimDates_FactPricesHistory" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimPriceTypes_FactPricesHistory" Member="DimPriceTypes" ThisKey="PriceTypeID" OtherKey="ID" Type="DimPriceTypes" IsForeignKey="true" />
+      <Association Name="DimUnits_FactPricesHistory" Member="DimUnits" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimGoods_FactPricesHistory" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimGoodAnalyticalKeys" Member="DimGoodAnalyticalKeys">
+    <Type Name="DimGoodAnalyticalKeys">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimGoods_DimGoodAnalyticalKeys" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimWarehouses_DimGoodAnalyticalKeys" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimSpecifications" Member="DimSpecifications">
+    <Type Name="DimSpecifications">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FromDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ToDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DimSpecifications_DocProductionCosts" Member="DocProductionCosts" ThisKey="ID" OtherKey="SpecificationID" Type="DocProductionCosts" />
+      <Association Name="DimSpecifications_DocProductionLines" Member="DocProductionLines" ThisKey="ID" OtherKey="SpecificationID" Type="DocProductionLines" />
+      <Association Name="DimSpecifications_FactMaterialsInProduction" Member="FactMaterialsInProductions" ThisKey="ID" OtherKey="SpecID" Type="FactMaterialsInProduction" />
+      <Association Name="DimSpecifications_FactProduction" Member="FactProductions" ThisKey="ID" OtherKey="SpecificationID" Type="FactProduction" />
+      <Association Name="DimPeople_DimSpecifications" Member="DimPeople" ThisKey="UserID" OtherKey="ID" Type="DimPeople" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactPOSLines" Member="FactPOSLines">
+    <Type Name="FactPOSLines">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="AmountTax" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DiscountAutoPercent" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="DiscountAutoAmount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DiscountManualPercent" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="DiscountManualAmount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="CasherID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Barcode" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Document898_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="Refund" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimGoods_FactPOSLines" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimPeople_FactPOSLines" Member="DimPeople" ThisKey="CasherID" OtherKey="ID" Type="DimPeople" IsForeignKey="true" />
+      <Association Name="DimUnits_FactPOSLines" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="FactPOS_FactPOSLines" Member="FactPOS" ThisKey="DocID" OtherKey="ID" Type="FactPOS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimUnitConversion" Member="DimUnitConversion">
+    <Type Name="DimUnitConversion">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FromUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FromQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="ToUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ToQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimUnits_DimUnitConversion" Member="DimUnits" ThisKey="FromUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DimUnitConversion1" Member="DimUnits1" ThisKey="ToUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactRemains" Member="FactRemains">
+    <Type Name="FactRemains">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="RemainsDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnStockQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="InOrdersQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="QtyGram" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDates_FactRemains" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_FactRemains" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_FactRemains" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_FactRemains" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactRemains" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactConsignmentMoves" Member="FactConsignmentMoves">
+    <Type Name="FactConsignmentMoves">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConsignmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RawGoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseToProductionQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RawBaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ToProductionQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RawUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ToProductionQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="RemainQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RemainQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDates_FactConsignmentMoves" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_FactConsignmentMoves" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_FactConsignmentMoves" Member="DimGoods" ThisKey="RawGoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_FactConsignmentMoves" Member="DimUnits" ThisKey="RawUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactConsignmentMoves1" Member="DimUnits1" ThisKey="RawBaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactConsignmentMoves" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+      <Association Name="FactConsignmentRemains_FactConsignmentMoves" Member="FactConsignmentRemains" ThisKey="ConsignmentID" OtherKey="ID" Type="FactConsignmentRemains" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactConsignmentRemains" Member="FactConsignmentRemains">
+    <Type Name="FactConsignmentRemains">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="FromWarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ToWarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InitQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InitQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="RemainQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RemainQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="BackQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BackQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="FactConsignmentRemains_FactConsignmentMoves" Member="FactConsignmentMoves" ThisKey="ID" OtherKey="ConsignmentID" Type="FactConsignmentMoves" />
+      <Association Name="FactConsignmentRemains_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="ConsignmentID" Type="FactProductionTree" />
+      <Association Name="DimDates_FactConsignmentRemains" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactConsignmentRemains" Member="DimWarehouses" ThisKey="FromWarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+      <Association Name="DimGoods_FactConsignmentRemains" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactConsignmentRemains1" Member="DimWarehouses1" ThisKey="ToWarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+      <Association Name="DimUnits_FactConsignmentRemains" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocProductionCosts" Member="DocProductionCosts">
+    <Type Name="DocProductionCosts">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumberPrefix" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DocNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="DocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="Posted" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MasterGoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SpecificationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DocProductionCosts_DocProductionCostIn" Member="DocProductionCostIn" ThisKey="ID" OtherKey="DocID" Type="DocProductionCostIn" />
+      <Association Name="DocProductionCosts_DocProductionCostOut" Member="DocProductionCostOut" ThisKey="ID" OtherKey="DocID" Type="DocProductionCostOut" />
+      <Association Name="DocProductionCosts_DocProductionCostMaterials" Member="DocProductionCostMaterials" ThisKey="ID" OtherKey="DocID" Type="DocProductionCostMaterials" />
+      <Association Name="DocProductionCosts_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="CostDocID" Type="FactProductionTree" />
+      <Association Name="DimDates_DocProductionCosts" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_DocProductionCosts" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_DocProductionCosts" Member="DimGoods" ThisKey="MasterGoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimPeople_DocProductionCosts" Member="DimPeople" ThisKey="UserID" OtherKey="ID" Type="DimPeople" IsForeignKey="true" />
+      <Association Name="DimSpecifications_DocProductionCosts" Member="DimSpecifications" ThisKey="SpecificationID" OtherKey="ID" Type="DimSpecifications" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCosts" Member="DimUnits" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCosts1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocProductionCostIn" Member="DocProductionCostIn">
+    <Type Name="DocProductionCostIn">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Document846_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDepartments_DocProductionCostIn" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_DocProductionCostIn" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCostIn" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCostIn1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DocProductionCosts_DocProductionCostIn" Member="DocProductionCosts" ThisKey="DocID" OtherKey="ID" Type="DocProductionCosts" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocProductionCostOut" Member="DocProductionCostOut">
+    <Type Name="DocProductionCostOut">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="CostShare" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Document846_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DocProductionCostOut_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="CostOutLineID" Type="FactProductionTree" />
+      <Association Name="DimDepartments_DocProductionCostOut" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_DocProductionCostOut" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCostOut" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCostOut1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DocProductionCosts_DocProductionCostOut" Member="DocProductionCosts" ThisKey="DocID" OtherKey="ID" Type="DocProductionCosts" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocProductionCostMaterials" Member="DocProductionCostMaterials">
+    <Type Name="DocProductionCostMaterials">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Document846_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DocProductionCostMaterials_FactProductionTree" Member="FactProductionTree" ThisKey="ID" OtherKey="CostMatLineID" Type="FactProductionTree" />
+      <Association Name="DimDepartments_DocProductionCostMaterials" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_DocProductionCostMaterials" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCostMaterials" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionCostMaterials1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DocProductionCosts_DocProductionCostMaterials" Member="DocProductionCosts" ThisKey="DocID" OtherKey="ID" Type="DocProductionCosts" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocProductionLines" Member="DocProductionLines">
+    <Type Name="DocProductionLines">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SpecificationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Document581_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDepartments_DocProductionLines" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_DocProductionLines" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimSpecifications_DocProductionLines" Member="DimSpecifications" ThisKey="SpecificationID" OtherKey="ID" Type="DimSpecifications" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionLines" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DocProductionLines1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimWarehouses_DocProductionLines" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+      <Association Name="DocProduction_DocProductionLines" Member="DocProduction" ThisKey="DocID" OtherKey="ID" Type="DocProduction" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactProductionTree" Member="FactProductionTree">
+    <Type Name="FactProductionTree">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductionDocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CostDocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CostOutLineID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CostMatLineID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="RawGoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RawBaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RawBaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RawQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RawUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RawQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="ConsignmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RemainQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="RemainQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="FirstRawMaterialGoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FirstRawMaterialProdPercent" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="PrepackGoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PrepackBaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="PrepackBaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PrepackQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="PrepackUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PrepackQtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="PercentProduction" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDates_FactProductionTree" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_FactProductionTree" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_FactProductionTree" Member="DimGoods" ThisKey="FirstRawMaterialGoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimGoods_FactProductionTree1" Member="DimGoods1" ThisKey="PrepackGoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimGoods_FactProductionTree2" Member="DimGoods2" ThisKey="RawGoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProductionTree" Member="DimUnits" ThisKey="PrepackUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProductionTree1" Member="DimUnits1" ThisKey="PrepackBaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProductionTree2" Member="DimUnits2" ThisKey="RawUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProductionTree3" Member="DimUnits3" ThisKey="RawBaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactProductionTree" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+      <Association Name="DocProductionCostMaterials_FactProductionTree" Member="DocProductionCostMaterials" ThisKey="CostMatLineID" OtherKey="ID" Type="DocProductionCostMaterials" IsForeignKey="true" />
+      <Association Name="DocProductionCostOut_FactProductionTree" Member="DocProductionCostOut" ThisKey="CostOutLineID" OtherKey="ID" Type="DocProductionCostOut" IsForeignKey="true" />
+      <Association Name="DocProductionCosts_FactProductionTree" Member="DocProductionCosts" ThisKey="CostDocID" OtherKey="ID" Type="DocProductionCosts" IsForeignKey="true" />
+      <Association Name="FactConsignmentRemains_FactProductionTree" Member="FactConsignmentRemains" ThisKey="ConsignmentID" OtherKey="ID" Type="FactConsignmentRemains" IsForeignKey="true" />
+      <Association Name="DocProduction_FactProductionTree" Member="DocProduction" ThisKey="ProductionDocID" OtherKey="ID" Type="DocProduction" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimTechOperations" Member="DimTechOperations">
+    <Type Name="DimTechOperation">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NChar(3)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DimTechOperation_DocProduction" Member="DocProductions" ThisKey="ID" OtherKey="TechOperationID" Type="DocProduction" />
+      <Association Name="DimTechOperation_DocTransferProduction" Member="DocTransferProductions" ThisKey="ID" OtherKey="TechOperationID" Type="DocTransferProduction" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocProduction" Member="DocProductions">
+    <Type Name="DocProduction">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumberPrefix" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DocNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="TechOperationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Posted" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="PriceTypeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DocProduction_DocProductionLines" Member="DocProductionLines" ThisKey="ID" OtherKey="DocID" Type="DocProductionLines" />
+      <Association Name="DocProduction_FactProductionTree" Member="FactProductionTrees" ThisKey="ID" OtherKey="ProductionDocID" Type="FactProductionTree" />
+      <Association Name="DimCurrencies_DocProduction" Member="DimCurrencies" ThisKey="CurrencyID" OtherKey="ID" Type="DimCurrencies" IsForeignKey="true" />
+      <Association Name="DimDates_DocProduction" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_DocProduction" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimPeople_DocProduction" Member="DimPeople" ThisKey="UserID" OtherKey="ID" Type="DimPeople" IsForeignKey="true" />
+      <Association Name="DimPriceTypes_DocProduction" Member="DimPriceTypes" ThisKey="PriceTypeID" OtherKey="ID" Type="DimPriceTypes" IsForeignKey="true" />
+      <Association Name="DimTechOperation_DocProduction" Member="DimTechOperation" ThisKey="TechOperationID" OtherKey="ID" Type="DimTechOperation" IsForeignKey="true" />
+      <Association Name="DimWarehouses_DocProduction" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DimPartners" Member="DimPartners">
+    <Type Name="DimPartner">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DimPartner_DocSale" Member="DocSales" ThisKey="ID" OtherKey="PartnerID" Type="DocSale" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocSales" Member="DocSales">
+    <Type Name="DocSale">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumberPrefix" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DocNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Posted" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="PartnerID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DocAmount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DocSale_DocSalesLine" Member="DocSalesLines" ThisKey="ID" OtherKey="DocID" Type="DocSalesLine" />
+      <Association Name="DimCurrencies_DocSale" Member="DimCurrencies" ThisKey="CurrencyID" OtherKey="ID" Type="DimCurrencies" IsForeignKey="true" />
+      <Association Name="DimPartner_DocSale" Member="DimPartner" ThisKey="PartnerID" OtherKey="ID" Type="DimPartner" IsForeignKey="true" />
+      <Association Name="DimWarehouses_DocSale" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocSalesLines" Member="DocSalesLines">
+    <Type Name="DocSalesLine">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="AmountTax" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="AmountWithTax" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DiscountAutoPercent" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="DiscountAutoAmount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="DiscountManualPercent" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="DiscountManualAmount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="Document822_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimUnits_DocSalesLine" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimGoods_DocSalesLine" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_DocSalesLine1" Member="DimUnits1" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimWarehouses_DocSalesLine" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+      <Association Name="DocSale_DocSalesLine" Member="DocSale" ThisKey="DocID" OtherKey="ID" Type="DocSale" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactCurrencyRates" Member="FactCurrencyRates">
+    <Type Name="FactCurrencyRate">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CurrencyID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Period" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="Fold" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Column Name="CurrencyRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="DimCurrencies_FactCurrencyRate" Member="DimCurrencies" ThisKey="CurrencyID" OtherKey="ID" Type="DimCurrencies" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocTransferProduction" Member="DocTransferProductions">
+    <Type Name="DocTransferProduction">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransferType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NumberPrefix" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DocNumber" Type="System.String" DbType="NVarChar(11)" CanBeNull="true" />
+      <Column Name="DocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Posted" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="TechOperationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="VarBinary(8)" CanBeNull="true" />
+      <Association Name="DocTransferProduction_DocTransferProductionLine" Member="DocTransferProductionLines" ThisKey="ID" OtherKey="DocID" Type="DocTransferProductionLine" />
+      <Association Name="DimDates_DocTransferProduction" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_DocTransferProduction" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimTechOperation_DocTransferProduction" Member="DimTechOperation" ThisKey="TechOperationID" OtherKey="ID" Type="DimTechOperation" IsForeignKey="true" />
+      <Association Name="DimWarehouses_DocTransferProduction" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DocTransferProductionLines" Member="DocTransferProductionLines">
+    <Type Name="DocTransferProductionLine">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransferType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DocID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="Document741_IDRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="KeyField" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(5,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimGoods_DocTransferProductionLine" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_DocTransferProductionLine" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_DocTransferProductionLine1" Member="DimUnits1" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DocTransferProduction_DocTransferProductionLine" Member="DocTransferProduction" ThisKey="DocID" OtherKey="ID" Type="DocTransferProduction" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactMaterialsInProduction" Member="FactMaterialsInProductions">
+    <Type Name="FactMaterialsInProduction">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="Period" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RecordKind" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="GoodRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="Department_TYPE" Type="System.Data.Linq.Binary" DbType="Binary(1)" CanBeNull="true" />
+      <Column Name="Department_RTRef" Type="System.Data.Linq.Binary" DbType="Binary(4)" CanBeNull="true" />
+      <Column Name="Department_RRRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="SpecID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ToDepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDates_FactMaterialsInProduction" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_FactMaterialsInProduction" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_FactMaterialsInProduction" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimSpecifications_FactMaterialsInProduction" Member="DimSpecifications" ThisKey="SpecID" OtherKey="ID" Type="DimSpecifications" IsForeignKey="true" />
+      <Association Name="DimUnits_FactMaterialsInProduction" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactMaterialsInProduction1" Member="DimUnits1" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactProduction" Member="FactProductions">
+    <Type Name="FactProduction">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ToWarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FromDepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="BaseQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="SpecificationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Period" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SpecificationRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="DepartmentRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="GoodAnalyticalKeyRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDates_FactProduction" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_FactProduction" Member="DimDepartments" ThisKey="FromDepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_FactProduction" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimSpecifications_FactProduction" Member="DimSpecifications" ThisKey="SpecificationID" OtherKey="ID" Type="DimSpecifications" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProduction" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProduction1" Member="DimUnits1" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactProduction" Member="DimWarehouses" ThisKey="ToWarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactProductionRemains" Member="FactProductionRemains">
+    <Type Name="FactProductionRemain">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="RemainsDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDates_FactProductionRemain" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimDepartments_FactProductionRemain" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimGoods_FactProductionRemain" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimUnits_FactProductionRemain" Member="DimUnits" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FactMovements" Member="FactMovements">
+    <Type Name="FactMovement">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WarehouseID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DepartmentID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GoodID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ConsignNumber" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="DateKey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Period" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RecorderTRef" Type="System.Data.Linq.Binary" DbType="Binary(4) NOT NULL" CanBeNull="false" />
+      <Column Name="RecorderRRef" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LineNum" Type="System.Decimal" DbType="Decimal(9,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RecordKind" Type="System.Decimal" DbType="Decimal(1,0)" CanBeNull="true" />
+      <Column Name="GoodRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="WarehouseRef" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" />
+      <Column Name="OnStockQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="BaseUnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="UnitID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InOrdersQty" Type="System.Decimal" DbType="Decimal(15,3)" CanBeNull="true" />
+      <Column Name="QtyPcs" Type="System.Decimal" DbType="Decimal(15,0)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="DimDepartments_FactMovement" Member="DimDepartments" ThisKey="DepartmentID" OtherKey="ID" Type="DimDepartments" IsForeignKey="true" />
+      <Association Name="DimDates_FactMovement" Member="DimDates" ThisKey="DateKey" OtherKey="DateKey" Type="DimDates" IsForeignKey="true" />
+      <Association Name="DimUnits_FactMovement" Member="DimUnits" ThisKey="BaseUnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimUnits_FactMovement1" Member="DimUnits1" ThisKey="UnitID" OtherKey="ID" Type="DimUnits" IsForeignKey="true" />
+      <Association Name="DimGoods_FactMovement" Member="DimGoods" ThisKey="GoodID" OtherKey="ID" Type="DimGoods" IsForeignKey="true" />
+      <Association Name="DimWarehouses_FactMovement" Member="DimWarehouses" ThisKey="WarehouseID" OtherKey="ID" Type="DimWarehouses" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
