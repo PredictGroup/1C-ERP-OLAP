@@ -1,0 +1,15 @@
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\bin\Debug\ERPReportUtils.exe.config
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\bin\Debug\ERPReportUtils.exe
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\bin\Debug\ERPReportUtils.pdb
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.csprojAssemblyReference.cache
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\MainWindow.g.cs
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\App.g.cs
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils_MarkupCompile.cache
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils_MarkupCompile.lref
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\MainWindow.baml
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.g.resources
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.Properties.Resources.resources
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.csproj.GenerateResource.cache
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.csproj.CoreCompileInputs.cache
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.exe
+C:\Users\Andy\Documents\GitHub\1C-ERP-OLAP\ERPReportUtils\obj\Debug\ERPReportUtils.pdb
